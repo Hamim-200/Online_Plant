@@ -40,3 +40,86 @@ html{
 .header-1{
     border-bottom: .1rem solid rgba(255,255,255,.2);
 }
+.header-3{
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    z-index: 10000;
+}
+
+.header-1 span{
+    font-weight: lighter;
+    color: #fff;
+    font-size: 1.7rem;
+}
+.header-1 a{
+    padding: 0 .7rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.header-1 a:hover{
+   color: yellow;
+}
+.header-2 .logo{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #fff;
+}
+.header-2 .logo i {
+    color: yellow;
+}
+
+.header-2 .search-bar-container{
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    padding: 1.5rem;
+    background: rgba(255,255,255,.2);
+    border-radius: .5rem;
+
+}
+.header-2 .search-bar-container #search-bar{
+    width: 100%;
+    background: none;
+    text-transform: none;
+    color: #fff;
+    font-size: 1.7rem;
+}
+.header-2 .search-bar-container #search-bar ::placeholder{
+    text-transform:capitalize;
+    color: #ddd;
+}
+.header-2 .search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 .5rem;
+}
+.header-2 .search-bar-container label:hover{
+    color: yellow;
+}
+.header-3 .navbar a{
+   color: #666;
+   font-size: 2rem;
+   margin-right: 2rem; 
+
+}
+.header-3 .icons a{
+   color: #666;
+   font-size: 2.5rem;
+   margin-left: 2rem; 
+
+}
+.header-3 a:hover{
+    color: var(--green);
+}
+
+#menu-bar{
+    font-size: 3rem;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
