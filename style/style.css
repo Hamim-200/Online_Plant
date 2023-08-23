@@ -42,6 +42,7 @@ section{
 .btn:hover{
     background: #333;
 }
+
 /* HEADER PART STYLE START */
 .header-1,
 .header-2,
@@ -188,15 +189,47 @@ section{
     color: #333;
     padding:5rem 0;
 }
+/* Home Style ends here */
 
+/* Banner Style Start Here */
+.banner-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.banner-container .banner{
+    flex: 1 1 40rem;
+    height: 25rem;
+    border: 1rem solid rgba(0,0,0,.3);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    position: relative;
+}
 
+.banner-container .banner .content{
+    position: absolute;
+    top:50%; left: 4%;
+    transform: translateY(-50%);
+}
 
+.banner-container .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-
-
-
-
-
+.banner-container .banner .content span{
+    color: #666;
+    font-size: 1.7rem;
+}
+.banner-container .banner .content h3{
+    color: #333;
+    font-size: 3rem;
+}
+.banner-container .banner:hover img{
+    transform: scale(1.2);
+}
+/* Banner Style End Here */
 
 
 
@@ -213,7 +246,9 @@ section{
     .header-3{
         padding: 2rem;
     }
-
+    section{
+        padding: 1.5rem;
+    }
 }
 
 @media (max-width:768px){
@@ -231,9 +266,6 @@ section{
     .header-3 .navbar.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
-
-   
-
     .header-3 .navbar a{
         display: block;
         margin: 1.5rem 0;
@@ -249,6 +281,23 @@ section{
     .header-2 .search-bar-container{
         width: 100%;
         margin-top: 2rem;
+    }
+
+    .home .home-slider .box{
+        background-position: right !important;
+        z-index: 0;
+    }
+    .home .home-slider .box::before{
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: rgba(255,255,255,.7);
+    }
+    .home .home-slider .box .content h3{
+        font-size: 4.5rem;
     }
 
 }
