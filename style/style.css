@@ -27,6 +27,21 @@ html{
     scroll-padding-top: 7rem;
 }
 
+section{
+    padding: 1.5rem 9% ;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--green);
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #333;
+}
 /* HEADER PART STYLE START */
 .header-1,
 .header-2,
@@ -140,6 +155,39 @@ html{
 }
 /* HEADER PART STYLE END */
 
+
+/* HOME PART STYLE START */
+
+.home{
+    padding-top: 0;
+}
+.home .home-slider{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border: 1rem solid rgba(0,0,0,.3);
+    border-top: 0;
+}
+.home .home-slider .box{
+    background-size: cover !important ;
+    background-position: center !important;
+    min-height: 55rem;
+    position: relative;
+}
+.home .home-slider .box .content{
+    position: absolute;
+    top: 50%; left: 5%;
+    transform: translateY(-50%);
+    max-width: 50rem;
+}
+
+.home .home-slider .box .content span{
+    font-size: 3rem;
+    color: #444;
+}
+.home .home-slider .box .content h3{
+    font-size: 6rem;
+    color: #333;
+    padding:5rem 0;
+}
 
 
 
