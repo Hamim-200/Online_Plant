@@ -345,6 +345,42 @@ section{
     background: var(--green); 
 }
 
+.product .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.product .box-container .box .starts i{
+    color:gold;
+    font-size: 2rem;
+}
+.product .box-container .box .quantity{
+    padding: 1rem 0;}
+.product .box-container .box .quantity span{
+    font-size: 2rem;
+}
+.product .box-container .box .quantity input{
+    font-size: 2rem;
+    padding: .5rem;
+    text-align: center;
+    background: rgba(0,0,0,.1);
+}
+.product .box-container .box .price{
+    font-weight: bolder;
+    color: var(--green);
+    font-size: 2rem;
+
+}
+.product .box-container .box .price span{
+    text-decoration: line-through;
+    color: #999;
+    font-weight: 1.rem;
+}
+
+.product .box-container .box .btn{
+    display: block;
+    margin: 2rem;
+}
 /* Product Section style End*/
 
 
