@@ -383,6 +383,34 @@ section{
 }
 /* Product Section style End*/
 
+/* Icon parts style start here */
+.icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.icons-container .icon{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex:1 1 25rem;
+}
+.icons-container .icon img{
+    width: 50px;
+    height: 50px;
+}
+.icons-container .icon .content{
+    padding-left: 2rem;
+}
+.icons-container .icon .content h3{
+    font-size: 2rem;
+    color: var(--green);
+}
+.icons-container .icon .content p{
+    font-size: 1.5rem;
+    color: #666
+}
+/* Icon parts style ends here */
 
 
 
