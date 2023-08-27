@@ -388,6 +388,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding:10px 100px  0 120px  ;
 }
 .icons-container .icon{
     padding: 2rem 0;
@@ -410,8 +411,76 @@ section{
     font-size: 1.5rem;
     color: #666
 }
+
+.icons-container .icon .content{
+    padding-left: 2rem;
+}
+.icons-container .icon .content h3{
+    font-size: 2rem;
+    color: var(--green);
+}
+.icons-container .icon .content p{
+    font-size: 1.5rem;
+    color: #666
+}
 /* Icon parts style ends here */
 
+/* DEAL parts style Start here */
+
+.deal .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.deal .row .image{
+    flex: 1 1 40rem;
+
+}
+.deal .row .image img{
+    width:100% ;
+}
+.deal .row .content{
+    flex: 1 1 40rem;
+}
+.deal .row .content{
+    flex: 1 1 40rem;
+}
+.deal .row .content .title{
+    font-size: 3.5rem;
+    color: #333;
+}
+.deal .row .content p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.deal .row .content .count-down{
+    display: flex;
+    padding: 1rem 0;
+    gap: 1.5rem;
+}
+.deal .row .content .count-down .box{
+    width: 9rem;
+    text-align: center;
+    border: .1rem solid rgba(0,0,0,.3);
+}
+.deal .row .content .count-down .box h3{
+    font-size: 5rem;
+    color: #333;
+}
+.deal .row .content .count-down .box span{
+    font-size: 1.7rem;
+    color: #fff;
+    display: block;
+    background: #666;
+    padding: .5rem;
+}
+
+
+/* DEAL parts style ends here */
 
 
 /* Media Queries */
@@ -491,4 +560,15 @@ section{
     .header-1{
         display: none;
     }
+    .deal .row .content .count-down .box{
+        width: 7rem;
+    }
+    .deal .row .content .count-down .box h3{
+        font-size: 3rem;
+        padding: 1rem 0.5;
+    }
+    .deal .row .content .count-down .box span{
+        font-size: 1.5rem;
+    }
+
 }
