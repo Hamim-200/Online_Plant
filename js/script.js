@@ -44,7 +44,6 @@ function countDown(){
   let hour = minute * 60;
   let day = hour * 24;
 
-
   let d = Math.floor(gap / (day));
   let h = Math.floor((gap % (day)) / (hour));
   let m = Math.floor((gap % (hour)) / (minute));
